@@ -728,7 +728,10 @@ body::after {
   var sections = document.querySelectorAll('.section');
   window.addEventListener('scroll', function() {
     var current = '', scrollY = window.scrollY + 120;
-    sections.forEach(function(s) { if (scrollY >= s.offsetTop) current = s.getAttribute('id'); });
+    sections.forEach(function(s) {
+      var rect = s.getBoundingClientRect();
+      if (scrollY >= rect.top + window.scrollY) current = s.getAttribute('id');
+    });
     navLinks.forEach(function(link) {
       link.classList.remove('active');
       if (link.getAttribute('href') === '#' + current) link.classList.add('active');
