@@ -130,7 +130,7 @@ body::after {
 .nav-bar a.active { color: var(--ucas-deep); border-bottom-color: var(--ucas-gold); font-weight: 600; }
 
 /* Container */
-.container { max-width: 1120px; margin: 0 auto; padding: 0 24px; position: relative; z-index: 1; }
+.container { max-width: 1240px; margin: 0 auto; padding: 0 20px; position: relative; z-index: 1; }
 
 /* Section */
 .section { padding: 64px 0; }
@@ -291,25 +291,25 @@ body::after {
 .job-table-wrap::-webkit-scrollbar { width: 6px; height: 6px; }
 .job-table-wrap::-webkit-scrollbar-track { background: #f8f9fb; }
 .job-table-wrap::-webkit-scrollbar-thumb { background: #c5cdd5; border-radius: 3px; }
-.job-table { width: 100%; border-collapse: collapse; font-size: 0.88em; min-width: 1000px; }
+.job-table { width: 100%; border-collapse: collapse; font-size: 0.85em; table-layout: fixed; }
 .job-table thead { position: sticky; top: 0; z-index: 10; }
 .job-table th {
   background: var(--ucas-deep);
   color: #fff;
-  padding: 14px 12px;
+  padding: 12px 8px;
   text-align: left;
   white-space: nowrap;
   font-weight: 500;
-  font-size: 0.92em;
+  font-size: 0.9em;
 }
 .job-table td {
-  padding: 12px;
+  padding: 10px 8px;
   border-bottom: 1px solid #eef1f6;
   vertical-align: top;
   color: var(--text-light);
   text-align: justify;
-  font-size: 0.9em;
-  line-height: 1.75;
+  font-size: 0.88em;
+  line-height: 1.7;
 }
 .job-table tbody tr { transition: background 0.2s; }
 .job-table tbody tr:hover { background: #f6f8fc; }
@@ -389,7 +389,7 @@ body::after {
   text-align: justify;
 }
 .qa-item.open .qa-answer { padding: 16px 20px; max-height: 3000px; }
-.qa-intro { text-align: center; color: var(--text-light); margin-bottom: 36px; line-height: 1.9; }
+.qa-intro { text-align: justify; text-indent: 2em; color: var(--text-light); margin-bottom: 36px; line-height: 1.9; }
 
 /* Footer */
 .footer {
@@ -417,8 +417,8 @@ body::after {
   .intro-tab { padding: 10px 16px; font-size: 0.88em; }
   .sub-tab { padding: 6px 14px; font-size: 0.85em; }
   .policy-grid { grid-template-columns: 1fr; }
-  .job-table { font-size: 0.75em; min-width: 800px; }
-  .job-table th, .job-table td { padding: 8px 6px; }
+  .job-table { font-size: 0.72em; }
+  .job-table th, .job-table td { padding: 6px 4px; }
   .more-links { flex-direction: column; }
   .video-wrapper video { max-height: 320px; }
 }
@@ -456,7 +456,7 @@ body::after {
   <div class="video-wrapper">
     <p style="text-align:center; font-size: 1.2em; font-weight: 500; margin-bottom: 12px; color: var(--ucas-deep);">《怀柔，不止山水》</p>
     <video controls preload="metadata" playsinline style="width:100%; border-radius: 10px; display: block; box-shadow: 0 4px 24px rgba(0,0,0,0.12);">
-      <source src="https://filevc.kjrb.com.cn:8888/founder/founder/founder/C683AE23A0834220B1B51DEA3A04E40B.mp4" type="video/mp4">
+      <source src="https://play.shipin.beijing.gov.cn/vod/38780258/hrqcpk/mrlm/2025/06/11/5214B2B6057A4600996D588EBE4AA55D1.mp4" type="video/mp4">
       您的浏览器不支持视频播放
     </video>
   </div>
@@ -556,6 +556,14 @@ body::after {
   <div class="section-card" style="padding: 0; overflow: hidden;">
     <div class="job-table-wrap" id="jobTableWrap">
       <table class="job-table" id="jobTable">
+        <colgroup>
+          <col style="width:13%">
+          <col style="width:11%">
+          <col style="width:5%">
+          <col style="width:15%">
+          <col style="width:42%">
+          <col style="width:14%">
+        </colgroup>
         <thead>
           <tr>
             <th>单位名称</th>
@@ -618,11 +626,11 @@ body::after {
       </div>
       <div class="qa-item">
         <div class="qa-question"><span class="q-text">问：目前怀柔区有哪些青创空间可以申请，联系方式是什么？</span><span class="q-icon">&#9660;</span></div>
-        <div class="qa-answer">答：目前怀柔区已有9个产业园区面向青年人才开放申请，详细信息见下表。咨询电话：010-69646163（怀柔区经济和信息化局负责政策解释）。</div>
+        <div class="qa-answer">答：目前怀柔区已有9个产业园区面向青年人才开放申请，详细信息见下表。<br><img src="assets/images/qingchuang-table.png" alt="青创空间列表" style="width:100%; max-width:100%; margin-top:10px; border-radius:6px;"></div>
       </div>
       <div class="qa-item">
         <div class="qa-question"><span class="q-text">问：我应如何申请青创空间？</span><span class="q-icon">&#9660;</span></div>
-        <div class="qa-answer">答：微信登录"雁栖云客厅"小程序，点击"雁栖青创无忧十条"专栏——"创业无忧"模块——"开始申报"，按提示提交相关信息即可完成线上申请。</div>
+        <div class="qa-answer">答：微信登录"雁栖云客厅"小程序，点击"雁栖青创无忧十条"专栏——"创业无忧"模块——"开始申报"，按提示提交相关信息即可完成线上申请。<br><img src="assets/images/3.雁栖云客厅小程序.jpg" alt="雁栖云客厅小程序二维码" style="width:160px; max-width:50%; margin-top:10px; border-radius:6px;"></div>
       </div>
       <div class="qa-item">
         <div class="qa-question"><span class="q-text">问：申请青创空间需要哪些材料？</span><span class="q-icon">&#9660;</span></div>
@@ -658,7 +666,7 @@ body::after {
       </div>
       <div class="qa-item">
         <div class="qa-question"><span class="q-text">问：人才公寓的面积多大，租金多少钱？</span><span class="q-icon">&#9660;</span></div>
-        <div class="qa-answer">答：人才公寓的具体信息见下表。包括雁栖国际社区一期（怀柔区雁栖河东路18号院）、雁栖国际社区二期（怀柔区雁栖河东路16号院）、高端仪器公寓（怀柔区雁栖南四街25号院），不同户型面积和租金各有不同。</div>
+        <div class="qa-answer">答：人才公寓的具体信息见下表。<br><img src="assets/images/rent-table.png" alt="人才公寓租金详情表" style="width:100%; max-width:100%; margin-top:10px; border-radius:6px;"></div>
       </div>
       <div class="qa-item">
         <div class="qa-question"><span class="q-text">问：我应如何申请人才公寓？</span><span class="q-icon">&#9660;</span></div>
