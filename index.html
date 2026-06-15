@@ -390,6 +390,12 @@ body::after {
 }
 .qa-item.open .qa-answer { padding: 16px 20px; max-height: 3000px; }
 .qa-intro { text-align: justify; text-indent: 2em; color: var(--text-light); margin-bottom: 36px; line-height: 1.9; }
+	.qa-table-wrap { overflow-x: auto; margin-top: 12px; border: 1px solid var(--border); border-radius: 6px; }
+	.qa-table-wrap table { width: 100%; border-collapse: collapse; font-size: 0.83em; min-width: 900px; }
+	.qa-table-wrap th { background: var(--ucas-deep); color: #fff; padding: 10px 8px; text-align: center; font-weight: 500; white-space: nowrap; font-size: 0.9em; }
+	.qa-table-wrap td { padding: 8px; border-bottom: 1px solid #eef1f6; text-align: center; vertical-align: top; line-height: 1.6; color: var(--text-light); }
+	.qa-table-wrap tr:last-child td { border-bottom: none; }
+	.qa-table-wrap tbody tr:hover { background: #f6f8fc; }
 
 /* Footer */
 .footer {
@@ -420,6 +426,8 @@ body::after {
   .job-table { font-size: 0.72em; }
   .job-table th, .job-table td { padding: 6px 4px; }
   .more-links { flex-direction: column; }
+  .qa-table-wrap table { font-size: 0.7em; min-width: 700px; }
+  .qa-table-wrap th, .qa-table-wrap td { padding: 6px 4px; }
   .video-wrapper video { max-height: 320px; }
 }
 </style>
@@ -666,7 +674,7 @@ body::after {
       </div>
       <div class="qa-item">
         <div class="qa-question"><span class="q-text">问：人才公寓的面积多大，租金多少钱？</span><span class="q-icon">&#9660;</span></div>
-        <div class="qa-answer">答：人才公寓的具体信息见下表。<br><img src="assets/images/rent-table.png" alt="人才公寓租金详情表" style="width:100%; max-width:100%; margin-top:10px; border-radius:6px;"></div>
+        <div class="qa-answer">答：人才公寓的具体信息见下表。<div class="qa-table-wrap"><table><thead><tr><th>序号</th><th>公寓名称</th><th>公寓位置</th><th>房源数量</th><th>房源户型</th><th>租金标准</th><th>前三年补贴后实付租金</th><th>后三年补贴后实付租金</th><th>优惠措施</th><th>咨询电话</th></tr></thead><tbody><tr><td>1</td><td>雁栖国际社区一期</td><td>怀柔区雁栖河东路18号院</td><td>29套</td><td>一居2套（59㎡/套）<br>二居5套（81.57-88.21㎡/套）<br>三居22套（138.75-155.71㎡/套）</td><td>住宅：51元/㎡/月</td><td>住宅：25.5元/㎡/月</td><td>住宅：38.25元/㎡/月</td><td>就业创业3个月免费周转住房<br>+长租6年补贴支持</td><td>15210259226<br>18510311638</td></tr><tr><td>2</td><td>雁栖国际社区二期</td><td>怀柔区雁栖河东路16号院</td><td>239套</td><td>宿舍201间（33.34-44.97㎡/套）<br>一居室23套（55.65-72.87㎡/套）<br>二居室15套（85-113.63㎡/套）</td><td>住宅：54元/㎡/月<br>宿舍：59元/㎡/月</td><td>住宅：27元/㎡/月<br>宿舍：29.5元/㎡/月</td><td>住宅：40.5元/㎡/月<br>宿舍：44.25元/㎡/月</td><td>就业创业3个月免费周转住房<br>+长租6年补贴支持</td><td>15210259226<br>18510311638</td></tr><tr><td>3</td><td>高端仪器公寓</td><td>怀柔区雁栖南四街25号院</td><td>32套</td><td>单人间11间（26-29㎡/套）<br>双人间15间（32-33㎡/套）<br>大开间6间（65-73㎡/套）</td><td>单人间:1600元/间/月<br>双人间:1800元/间/月<br>大开间:3200元/间/月</td><td>单人间:800元/间/月<br>双人间:900元/间/月<br>大开间:1600元/间/月</td><td>单人间:1200元/间/月<br>双人间:1350元/间/月<br>大开间:2400元/间/月</td><td>求职7天免费住<br>+就业创业3个月免费周转住房<br>+长租6年补贴支持</td><td>13661172996</td></tr></tbody></table></div></div>
       </div>
       <div class="qa-item">
         <div class="qa-question"><span class="q-text">问：我应如何申请人才公寓？</span><span class="q-icon">&#9660;</span></div>
