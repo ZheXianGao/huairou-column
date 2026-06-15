@@ -291,7 +291,7 @@ body::after {
 .job-table-wrap::-webkit-scrollbar { width: 6px; height: 6px; }
 .job-table-wrap::-webkit-scrollbar-track { background: #f8f9fb; }
 .job-table-wrap::-webkit-scrollbar-thumb { background: #c5cdd5; border-radius: 3px; }
-.job-table { width: 100%; border-collapse: collapse; font-size: 0.85em; table-layout: fixed; }
+.job-table { width: 100%; border-collapse: collapse; font-size: 0.85em; }
 .job-table thead { position: sticky; top: 0; z-index: 10; }
 .job-table th {
   background: var(--ucas-deep);
@@ -313,8 +313,8 @@ body::after {
 }
 .job-table tbody tr { transition: background 0.2s; }
 .job-table tbody tr:hover { background: #f6f8fc; }
-.job-table .company-name { color: var(--ucas-deep); font-weight: 600; white-space: nowrap; text-align: left; }
-.job-table .job-position { color: var(--ucas-blue); white-space: nowrap; }
+.job-table .company-name { color: var(--ucas-deep); font-weight: 600; text-align: left; }
+.job-table .job-position { color: var(--ucas-blue); }
 .job-table .job-phone { white-space: nowrap; color: var(--text-light); }
 .job-download { text-align: center; margin-top: 28px; }
 .job-download a {
@@ -565,11 +565,11 @@ body::after {
     <div class="job-table-wrap" id="jobTableWrap">
       <table class="job-table" id="jobTable">
         <colgroup>
-          <col style="width:12%">
-          <col style="width:13%">
+          <col style="width:15%">
+          <col style="width:15%">
           <col style="width:6%">
           <col style="width:14%">
-          <col style="width:41%">
+          <col style="width:36%">
           <col style="width:14%">
         </colgroup>
         <thead>
