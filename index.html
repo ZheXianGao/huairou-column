@@ -774,13 +774,13 @@ body::after {
     tbody.innerHTML = '';
     jobData.forEach(function(company) {
       // Gather company-level phone info
-      var companyPhone = company.phone || '';
+      var companyPhone = String(company.phone || '').replace(/\.0$/, '');
       company.positions.forEach(function(pos, idx) {
         var tr = document.createElement('tr');
         var nameCell = idx === 0 ? '<td rowspan="' + company.positions.length + '" class="company-name">' + company.name + '</td>' : '';
         var requirements = (pos.requirements || '').replace(/\n/g, '<br>');
         // Phone: position-level first, then company-level
-        var phone = pos.phone || companyPhone || '';
+        var phone = String(pos.phone || companyPhone || '').replace(/\.0$/, '');
         tr.innerHTML = nameCell +
           '<td class="job-position">' + pos.position + '</td>' +
           '<td>' + parseInt(pos.count) + '</td>' +
